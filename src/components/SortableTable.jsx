@@ -48,8 +48,8 @@ const SortableTable = () => {
     setAppleData(sortedData);
   };
 
-  if (isLoading) return <div className="my-[4rem]"><Spin size="large" /></div>;
-  if (error) return <div className="my-[4rem] text-red-500">Error: {error.message}</div>;
+  if (isLoading) return <div className="my-[4rem] text-center"><Spin size="large" /></div>;
+  if (error) return <div className="my-[4rem] text-red-500 text-center">Error: {error.message}</div>;
 
   return (
     <div className="pt-4 mb-12">
